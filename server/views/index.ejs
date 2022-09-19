@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Hello world</title>
+
+    <!-- CSS link (loading Semantic UI from a CDN) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css" integrity="sha512-8bHTC73gkZ7rZ7vpqUQThUDhqcNFyYi2xgDgPDHc+GXVGHXq+xPjynxIopALmOPqzo9JZj0k6OqqewdGO3EsrQ==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="index.css" />
+</head>
+
+<body class="container">
+    <table id="customers">
+        <tr>
+            <th>Ma SP</th>
+            <th>Ten SP</th>
+            <th>So luong</th>
+            <th>Hinh anh</th>
+            <th>Chon</th>
+        </tr>
+        <% for(let i = 0; i < sanPhams.lenght; i++) {  %>
+            <tr>
+                <td>
+                    <%=sanPhams[i].ma_sp%>
+                </td>
+                <td>
+                    <%=sanPhams[i].ten_sp%>
+                </td>
+                <td>
+                    <%=sanPhams[i].so_luong%>
+                </td>
+            </tr>
+            <% } %>
+    </table>
+
+
+</body>
